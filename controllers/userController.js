@@ -80,8 +80,14 @@ module.exports = {
                 return res.status(404);
             }
             const user = await User.findOneAndUpdate(
-                { _id: userId },
-                { $addToSet: { friends: friendId } }
+                {
+                    _id: userId
+                },
+                {
+                    $addToSet: {
+                        friends: friendId
+                    }
+                }
             )
             if (!user) {
                 return res.status(404);
@@ -100,8 +106,14 @@ module.exports = {
                 return res.status(404);
             }
             const user = await User.findOneAndUpdate(
-                { _id: userId },
-                { $pull: { friends: friendId } }
+                {
+                    _id: userId
+                },
+                {
+                    $pull: {
+                        friends: friendId
+                    }
+                }
             )
             if (!user) {
                 return res.status(404).json(user);
