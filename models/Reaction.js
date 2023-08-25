@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+//creating reaction schema
 const reactionSchema = new mongoose.Schema({
     reactionId: {
         type: mongoose.Schema.ObjectId,

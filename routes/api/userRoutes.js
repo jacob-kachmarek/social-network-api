@@ -1,5 +1,5 @@
 const router = require('express').Router();
-
+//requireing all functions for routing
 const {
     getUsers,
     getOneUser,
@@ -9,7 +9,7 @@ const {
     addFriend,
     deleteFriend
 } = require('../../controllers/userController')
-
+//creating endpoints
 router.route('/')
     .get(getUsers)
     .post(createUser);

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-
+//requireing all functions for routing
 const {
     getThoughts,
     getOneThought,
@@ -9,7 +9,7 @@ const {
     createReaction,
     deleteReaction
 } = require('../../controllers/thoughtController');
-
+//creating endpoints
 router.route('/')
     .get(getThoughts)
     .post(createThought);

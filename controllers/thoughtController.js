@@ -1,5 +1,5 @@
 const { Thought, User } = require('../models/index')
-
+//creating functions for crud operations 
 module.exports = {
     async getThoughts(req, res) {
         try {

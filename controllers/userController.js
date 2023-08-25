@@ -1,5 +1,5 @@
 const { User } = require('../models/index');
-
+//creating functions for crud operations 
 module.exports = {
     async getUsers(req, res) {
         try {
